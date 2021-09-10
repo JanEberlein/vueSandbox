@@ -3,8 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://unpkg.com/vue@next"></script>
 </head>
 <body>
   Hello World
+  <div id="app">
+    {{ counter }}
+    <button @click="counter++">increase</button>
+    <button @click="counter--">decrease</button>
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>
